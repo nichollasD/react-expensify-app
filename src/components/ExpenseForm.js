@@ -60,14 +60,14 @@ export default class ExpenseForm extends React.Component {
         <form onSubmit={this.onSubmit}>
           <input
             type="text"
-            placeholder="Description"
+            placeholder="Descrição"
             autoFocus
             value={this.state.description}
             onChange={this.onDescriptionChange}
           />
           <input
             type="text"
-            placeholder="Amount"
+            placeholder="Custo"
             value={this.state.amount}
             onChange={this.onAmountChange}
           />
@@ -77,15 +77,16 @@ export default class ExpenseForm extends React.Component {
             focused={this.state.calendarFocused}
             onFocusChange={this.onFocusChange}
             numberOfMonths={1}
+            placeholder="Data"
             isOutsideRange={() => false}
           />
           <textarea
-            placeholder="Add a note for your expense (optional)"
+            placeholder="Adicionar comentário (optional)"
             value={this.state.note}
             onChange={this.onNoteChange}
           >
           </textarea>
-          <button>Add Expense</button>
+          <button>Adicionar Despesa</button>
         </form>
       </div>
     )
