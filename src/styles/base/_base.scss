@@ -1,14 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
-  padding-left: 5%;
-  font-family: Helvetica, Arial, sans-serif;
+  color: $dark-grey;
+  font-family: Arial;
   font-size: $m-size;
-}
-html:hover {
-  background: rgb(79, 201, 201);
+  line-height: 1.6;
 }
 
 button {
@@ -21,5 +23,4 @@ button:disabled {
 
 .is-active {
   font-weight: bold;
-  color: red;
 }

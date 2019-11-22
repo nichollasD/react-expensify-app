@@ -1,0 +1,24 @@
+.button {
+  background: rgb(255, 180, 19);
+  border: none;
+  border-bottom: 0.3rem solid darken(rgb(255, 180, 19), 10%);
+  color: BLACK;
+  font-weight: bold;
+  padding: $s-size;
+}
+.button:active{
+  border-bottom:none;
+  border-top: 0.3rem solid darken(rgb(255, 180, 19), 10%);
+}
+
+.button--link {
+  background: rgb(255, 255, 255);
+  border: none;
+  border-bottom: 0.3rem solid darken(rgb(255, 255, 255), 10%);
+  color: BLACK;
+  font-weight: bold;
+}
+
+.button--secondary {
+  background: #888;
+}
